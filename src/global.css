@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    place-content: center;
+}
+
+
+.container {
+    border: 1px solid #fff;
+    color: #121111;
+    padding: 16px;;
+    border-radius: 4px;
+}
