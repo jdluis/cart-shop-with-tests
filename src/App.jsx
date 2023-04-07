@@ -1,4 +1,4 @@
-import React from 'react'; //No me deja realizar test sin este ijmport
+import React from 'react'; //I need to import for now, if not the test dosent work.
 
 function App() {
   return (
