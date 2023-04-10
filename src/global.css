@@ -1,15 +1,21 @@
 * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
     margin: 0;
     place-content: center;
 }
 
+body {
+    background-color: bisque;
+    min-height: 100vh;
+}
 
 .container {
-    border: 1px solid #fff;
+    border: 1px solid #717171;
     color: #121111;
     padding: 16px;;
     border-radius: 4px;
+    width: 80%;
+    margin: auto;
 }
+
