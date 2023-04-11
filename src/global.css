@@ -5,17 +5,31 @@
     place-content: center;
 }
 
+:root {
+    --neon-blue: #2272FF;
+    --black-color: #1D1D1D;
+}
+
 body {
-    background-color: bisque;
+    background-color: var(--black-color);
     min-height: 100vh;
+    color: aliceblue;
 }
 
 .container {
     border: 1px solid #717171;
-    color: #121111;
+    border-radius: 15px;
     padding: 16px;;
     border-radius: 4px;
     width: 80%;
-    margin: auto;
+    margin: 2rem auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    align-items: start;
+    justify-content: center;
 }
 

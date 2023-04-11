@@ -3,5 +3,5 @@
     right: 0;
     top: 0;
     padding: 20px;
-    background-color: green;
+    background-color: var(--neon-blue);
 };
