@@ -1,5 +1,5 @@
 import SingleProduct from "./SingleProduct.jsx";
-
+import React from 'react'
 function ListOfProducts(props) {
     const {products, handleAdd}  = props
   return (

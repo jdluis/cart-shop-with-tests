@@ -1,3 +1,5 @@
+import React from 'react'
+
 function SingleProduct(props) {
   const {product, handleAdd} = props;
   return (

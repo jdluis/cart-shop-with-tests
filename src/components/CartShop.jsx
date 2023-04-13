@@ -1,4 +1,5 @@
 import "../styles/cart-shop.css";
+import React from 'react' //Temporal, problem with jest if i dont import
 
 function CartShop(props) {
   const { productsInCart } = props;
