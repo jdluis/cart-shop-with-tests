@@ -1,6 +1,6 @@
 # Learning Jest and React Testing Library
 
-### Test Chechklist
+### Test Checklist 
 - [x] How check if Components is rendered?
 - [x] Data is showing in my component?
 - [x] Buttons are clicked?
