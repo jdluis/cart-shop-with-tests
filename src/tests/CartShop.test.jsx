@@ -1,15 +1,39 @@
 import React from "react";
-import { cleanup, render, screen } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import CartShop from "../components/CartShop";
-import productsInCartMock from "../../mocks/productsInCartMock.js"
-
+import productsMock from "../../mocks/productsMock.js";
 
 describe("Cart Tests", () => {
-    test("Renderizando component", () => {
-        //Tengo que simular que le llega algun dato, ya que length esta como undefined y por ello no me pasa el test
-        render(<CartShop productsInCart={productsInCartMock} />)
-        cleanup()
-    })
-})
+  const mockHandler = jest.fn();
 
+  test("Component without data", () => {
+    const titleNoProduct = "Add a Product from the List";
+    const component = render(<CartShop productsInCart={[]} />);
+    
+    expect(component.getByText(titleNoProduct));
+  });
 
+  test("Component with data", () => {
+    const component = render(
+      <CartShop productsInCart={productsMock} />
+    );
+
+    expect(
+      productsMock.forEach((product) => {
+        component.getByText(product.title).toBeInTheDocument;
+      })
+    );
+  });
+
+  test(" Click event to Pay Btn", () => {
+    const component = render(<CartShop productsInCart={productsMock} />);
+    const button = component.getByText("Process To Pay");
+
+    fireEvent.click(button);
+
+    //Here will check if the modal is open
+    //expect(console.log("All By"))
+
+    cleanup();
+  });
+});

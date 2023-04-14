@@ -1,11 +1,10 @@
 import React from "react";
 import { cleanup, fireEvent, prettyDOM, render, screen } from "@testing-library/react";
 import SingleProduct from "../components/SingleProduct";
-import productsInCartMock from "../../mocks/productsInCartMock.js";
+import productsMock from "../../mocks/productsMock.js";
 
 describe("Single Product", () => {
-  const productMock = productsInCartMock[0];
-  /* const handleAddMock = () => {}; */
+  const productMock = productsMock[0];
 
   test("Rending component", () => {
     const addToCartBtn = "Add to Cart";
