@@ -14,7 +14,7 @@
 - screen: **Selected all the actual screen**
 - debug(): **Show us in the console a better look of the component/element debugging**
 - fireEvent: **Like the name said we can call any event, example: fireEvent.click(button)**
-- getByText: ** Like js with the querySelector but with text on the component rendered or in the screen**
+- getByText: **Like js with the querySelector but with text on the component rendered or in the screen**
 - jest.fn(): **For implement a Mock**
 - toBeInTheDocument(): **Used to assert that an element is in the body of the document, or not.**
 - toHaveBeenCalledTimes(Number): **If a function was called a certain times**
