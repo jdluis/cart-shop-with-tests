@@ -30,3 +30,10 @@
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 - [My Web-Portafolio](https://jdluis.com/)
 
+#### Questions for comunity, Help?
+
+- ***React import in Jest testing:***
+  - <sub> I dont know how to configure my test for dont require React import in my components, when i run dev is all good without imported but if i run jest test without "import React from 'react'", the test crashed. </sub>
+
+  *Any suggestion?*
+
